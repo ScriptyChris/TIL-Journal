@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <link rel="stylesheet" href="./frontend/css/main.css">
+
+    <title>TIL-Journal</title>
+  </head>
+  <body>
+    <h1 class="app-name">TIL-Journal</h1>
+    <p>Store your <abbr title="Today I Learned">TIL</abbr> entries and therefore create your learning history journal. :)</p>
+
+    <form class="til-form">
+      <fieldset>
+        <legend>
+          <h2>Fill your TIL entry data:</h2>
+        </legend>
+
+        <div class="til-form__controls">
+          <label for="entryWhat">what</label>
+          <input type="text" id="entryWhat" name="entryWhat">
+
+          <label for="entryDesc">description</label>
+          <input type="text" id="entryDesc" name="entryDesc">
+
+          <label for="entryDoc">documentation</label>
+          <input type="text" id="entryDoc" name="entryDoc">
+
+          <label for="entryUsagePlace">usage place</label>
+          <input type="text" id="entryUsagePlace" name="entryUsagePlace">
+
+          <label for="entryCategory">category</label>
+          <input type="text" id="entryCategory" name="entryCategory">
+
+          <label for="entryDifficulty">difficulty</label>
+          <input type="number" id="entryDifficulty" name="entryDifficulty" min="1" max="10">
+        </div>
+      </fieldset>
+
+      <button type="submit">Save</button>
+    </form>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./frontend/js/index.js"></script>
+  </body>
+</html>

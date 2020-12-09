@@ -1,0 +1,20 @@
+{
+  "name": "til-journal",
+  "version": "1.0.0",
+  "description": "Electron based app, which provides storing and analyzing user progress of \"Today I Learned\" data entries.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/ScriptyChris/TIL-Journal",
+  "keywords": [
+    "today i learned",
+    "journal",
+    "Electron"
+  ],
+  "author": "ScriptyChris",
+  "license": "ICS",
+  "devDependencies": {
+    "electron": "^11.0.3"
+  }
+}
